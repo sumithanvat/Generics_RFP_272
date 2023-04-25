@@ -8,15 +8,15 @@ public class MaxNumber <T extends Comparable<T>>{
      */
 // we create a method to check maximum between 3 numbers
 
-    public T findMax(T num1 , T num2, T num3) { // with help of .compare
-        T max = num1;
+    public T findMax(T word1 , T word2, T word3) { // with help of .compare
+        T max = word1;
 
-        if (num2.compareTo(max) > 0) {
-            max = num2;
+        if (word2.compareTo(max) > 0) {
+            max = word2;
         }
 
-        if (num3.compareTo(max) > 0) {
-            max = num3;
+        if (word3.compareTo(max) > 0) {
+            max = word3;
         }
 
         return max;
