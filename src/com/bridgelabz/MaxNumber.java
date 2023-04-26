@@ -1,8 +1,6 @@
 // Refactor 1
 package com.bridgelabz;
 
-import java.util.Scanner;
-
 public class MaxNumber <T extends Comparable<T>>{
     /*
     T is generic which we givig data type
