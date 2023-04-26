@@ -8,13 +8,12 @@ public class Main {
      */
     public static void main(String[] args) {
 
-        int a = 1, b = 2, c = 3,d = 4;
-        System.out.println(MaximumFinder.max(a, b, c, d)); // Output: 4
+        Integer[] a = {20, 52, 83};
+        Double[] b = {5.6, 32.6, 99.9};
+        String[] c = {"apple", "banana", "orange"};
 
-        double v = 0.7,x = 1.1, y = 2.2, z = 3.3;
-        System.out.println(MaximumFinder.max(v,x, y, z)); // Output: 3.3
-
-        String s1 = "apple", s2 = "banana", s3 = "orange", s4 = "papaya";
-        System.out.println(MaximumFinder.max(s1, s2, s3,s4)); // Output: papaya
+        MaximumFinder.max(a); // Output: Maximum element: 3
+        MaximumFinder.max(b); // Output: Maximum element: 3.3
+        MaximumFinder.max(c); // Output: Maximum element: orange
     }
 }
