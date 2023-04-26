@@ -6,16 +6,16 @@ public class Main {
      */
     public static void main(String[] args) {
         // Test cases
-        // Test case 1: max word is at 1st position
-            System.out.println("Test case 1: max number is at 1st position");
-            System.out.println(new MaxNumber<String>().findMax("c","a","b")); // expected output: c
+        // for integer
+        MaxNumber<Integer> integerFinder = new MaxNumber<>();
+        System.out.println(integerFinder.findMax(75, 59, 31)); // Output: 75;
 
-            // Test case 2: max word is at 2nd position
-            System.out.println("Test case 2: max number is at 2nd position");
-            System.out.println(new MaxNumber<String>().findMax("atul","prafull","akku")); // expected output: prafull
+        // for float
+        MaxNumber<Float> floatFinder = new MaxNumber<>();
+        System.out.println(floatFinder.findMax(4.1f, 1.9f, 4.6f)); // Output: 4.6
 
-            // Test case 3: max word is at 3rd position
-            System.out.println("Test case 3: max number is at 3rd position");
-            System.out.println(new MaxNumber<String>().findMax("apple","banana","mango")); // expected output: mango
-        }
+        MaxNumber<String> stringFinder = new MaxNumber<>();
+        System.out.println(stringFinder.findMax("apple", "banana", "pear")); // Output: pear
+
     }
+}
